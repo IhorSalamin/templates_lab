@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Профіль пацієнта</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Дані пацієнта</h2>
+    <table>
+        <tr>
+            <th>patientId</th>
+            <td>{{ patient.patientId }}</td>
+        </tr>
+        <tr>
+            <th>Ім'я</th>
+            <td>{{ patient.name }}</td>
+        </tr>
+        <tr>
+            <th>Телефон</th>
+            <td>{{ patient.phone }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ patient.email }}</td>
+        </tr>
+        <tr>
+            <th>Пароль</th>
+            <td>{{ patient.password }}</td>
+        </tr>
+    </table>
+</body>
+</html>
